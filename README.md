@@ -1,4 +1,4 @@
-[![Header] https://github.com/Badx86
+
 ## I'm a beginner QA Engineer 
 ### Language and Tools
 ![Header](https://img.shields.io/badge/Jira-090909?style=for-the-badge&logo=jira&logoColor=136be1)
