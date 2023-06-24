@@ -2,6 +2,8 @@
 ## I'm a beginner QA Engineer 
 - [Certificate](https://drive.google.com/file/d/1vH337d8devHf4BT-2fYWpMjSMyrJOYFo/view?usp=sharing)
 ### Language and Tools
+
+![Header](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)
 ![Header](https://img.shields.io/badge/Jira-090909?style=for-the-badge&logo=jira&logoColor=136be1)
 ![Header](https://img.shields.io/badge/Postman-090909?style=for-the-badge&logo=postman&logoColor=f76935)
 ![Header](https://img.shields.io/badge/Swagger-090909?style=for-the-badge&logo=swagger&logoColor=7ede2b)
