@@ -1,6 +1,6 @@
 
 ## I'm a beginner QA Engineer 
-- [Certificate](https://drive.google.com/file/d/1vH337d8devHf4BT-2fYWpMjSMyrJOYFo/view?usp=sharing)
+- [FunctionalTestingCourseCertificate](https://drive.google.com/file/d/1vH337d8devHf4BT-2fYWpMjSMyrJOYFo/view?usp=sharing)
 ### Language and Tools
 
 ![Header](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)
