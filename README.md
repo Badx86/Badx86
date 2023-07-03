@@ -1,5 +1,5 @@
 
-## I'm a beginner QA Engineer 
+QA Engineer 
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
 ### Language and Tools
 
