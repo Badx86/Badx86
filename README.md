@@ -1,3 +1,6 @@
+<div id="header" align="center">
+  <img src="https://media0.giphy.com/media/scZPhLqaVOM1qG4lT9/giphy.webp?cid=ecf05e47frxql98ssfrttoy6ubt0y67zqomuqy2euws7vczt&ep=v1_gifs_search&rid=giphy.webp&ct=g" width="200"/>
+</div>
 
 QA Engineer 
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
