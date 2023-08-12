@@ -1,6 +1,7 @@
-<div id="header" align="center">
-  <img src="https://media0.giphy.com/media/scZPhLqaVOM1qG4lT9/giphy.webp?cid=ecf05e47frxql98ssfrttoy6ubt0y67zqomuqy2euws7vczt&ep=v1_gifs_search&rid=giphy.webp&ct=g" width="200"/>
-</div>
+<p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm1mcHNxenVmZzdnYjQ5dGdsN2N2czkyejN1YXBkMnEweGk0cmg0MiZlcD12MV9pbnRlcm5hbF9naWZfYjlfaWQmY3Q9Zw/QpVUMRUJGokfqXyfa1/giphy.gif" alt="Your image description" width="1000" height="150">
+</p>
+
 
 QA Engineer 
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
