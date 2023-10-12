@@ -2,6 +2,10 @@
   <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm1mcHNxenVmZzdnYjQ5dGdsN2N2czkyejN1YXBkMnEweGk0cmg0MiZlcD12MV9pbnRlcm5hbF9naWZfYjlfaWQmY3Q9Zw/QpVUMRUJGokfqXyfa1/giphy.gif" alt="Your image description" width="1000" height="150">
 </p>
 
+<p align="center">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=Badx86.Badx86&left_text=My%20Profile%20Visitors" alt="visitor badge">
+</p>
+
 
 QA Engineer 
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
