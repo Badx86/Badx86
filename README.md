@@ -33,6 +33,7 @@ QA Engineer
 - [Bug-Reports](https://github.com/Badx86/Bug-Reports)
 - [SQL Queries](https://github.com/Badx86/SQL-Queries)
 - [Postman Collections](https://github.com/Badx86/Postman-Collections)
+- [Site Maps](https://github.com/Badx86/Site-Maps)
 
 ### Follow Me
 [![Header](https://img.shields.io/badge/Telegram-090909?style=for-the-badge&logo=telegram&logoColor=31a5db)](https://t.me/badx86)
