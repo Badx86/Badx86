@@ -31,6 +31,7 @@ QA Engineer
 - [Checklists](https://github.com/Badx86/Checklists)
 - [Test-Suites and Test-Cases](https://github.com/Badx86/Test-Suites-and-Test-Cases)
 - [Bug-Reports](https://github.com/Badx86/Bug-Reports)
+- [Test-Plan](https://drive.google.com/file/d/1SFSsskNMEVJAX7Sy9FJAFqX4I8A47l_X/view?usp=sharing)
 - [SQL Queries](https://github.com/Badx86/SQL-Queries)
 - [Postman Collections](https://github.com/Badx86/Postman-Collections)
 - [Mind Maps](https://github.com/Badx86/Site-Maps)
