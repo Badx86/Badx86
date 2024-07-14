@@ -42,8 +42,3 @@ QA Engineer
 ### Follow Me
 [![Header](https://img.shields.io/badge/Telegram-090909?style=for-the-badge&logo=telegram&logoColor=31a5db)](https://t.me/badx86)
 [![Header](https://img.shields.io/badge/Linkedin-090909?style=for-the-badge&logo=linkedin&logoColor=0073b1)](https://www.linkedin.com/in/stanislav-osipov89/)
-
-<p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1x7IQVhIU6lHOSSjZqFogTMGY0K5UKEOG" alt="footer" width="1000" height="250">
-</p>
-
