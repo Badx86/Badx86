@@ -44,6 +44,6 @@ QA Engineer
 [![Header](https://img.shields.io/badge/Linkedin-090909?style=for-the-badge&logo=linkedin&logoColor=0073b1)](https://www.linkedin.com/in/stanislav-osipov89/)
 
 <p align="center">
-  <img src="https://drive.google.com/file/d/1x7IQVhIU6lHOSSjZqFogTMGY0K5UKEOG/view?usp=sharing" alt="footer" width="1000" height="150">
+  <img src="https://drive.google.com/uc?export=view&id=1x7IQVhIU6lHOSSjZqFogTMGY0K5UKEOG" alt="footer" width="1000" height="250">
 </p>
 
