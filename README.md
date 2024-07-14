@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm1mcHNxenVmZzdnYjQ5dGdsN2N2czkyejN1YXBkMnEweGk0cmg0MiZlcD12MV9pbnRlcm5hbF9naWZfYjlfaWQmY3Q9Zw/QpVUMRUJGokfqXyfa1/giphy.gif" alt="Your image description" width="1000" height="150">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm1mcHNxenVmZzdnYjQ5dGdsN2N2czkyejN1YXBkMnEweGk0cmg0MiZlcD12MV9pbnRlcm5hbF9naWZfYjlfaWQmY3Q9Zw/QpVUMRUJGokfqXyfa1/giphy.gif" alt="header" width="1000" height="150">
 </p>
 
 <p align="center">
@@ -42,3 +42,8 @@ QA Engineer
 ### Follow Me
 [![Header](https://img.shields.io/badge/Telegram-090909?style=for-the-badge&logo=telegram&logoColor=31a5db)](https://t.me/badx86)
 [![Header](https://img.shields.io/badge/Linkedin-090909?style=for-the-badge&logo=linkedin&logoColor=0073b1)](https://www.linkedin.com/in/stanislav-osipov89/)
+
+<p align="center">
+  <img src="https://drive.google.com/file/d/1x7IQVhIU6lHOSSjZqFogTMGY0K5UKEOG/view?usp=sharing" alt="footer" width="1000" height="150">
+</p>
+
