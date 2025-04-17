@@ -16,6 +16,7 @@ QA/AQA Engineer
 ![SELENIUM](https://img.shields.io/badge/Selenium-090909?style=for-the-badge&logo=selenium&logoColor=43B02A)
 ![PLAYWRIGHT](https://img.shields.io/badge/Playwright-090909?style=for-the-badge&logo=playwright&logoColor=2EAD33)
 ![REQUESTS](https://img.shields.io/badge/Requests-090909?style=for-the-badge&logo=python&logoColor=3670A0)
+![ALLURE](https://img.shields.io/badge/Allure-090909?style=for-the-badge&logo=allure&logoColor=C5D9C8)
 ![DOCKER](https://img.shields.io/badge/-DOCKER-090909?style=for-the-badge&logo=DOCKER&logocolor=F24E1E)
 ![GIT](https://img.shields.io/badge/-GIT-090909?style=for-the-badge&logo=git&logocolor=F24E1E)
 ![GITHUB](https://img.shields.io/badge/Github-090909?style=for-the-badge&logo=github&logoColor=8cc4d7)
