@@ -12,6 +12,7 @@ QA Engineer
 ### Language and Tools
 
 ![PYTHON](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)
+![PYTEST](https://camo.githubusercontent.com/e82a7956931445b241f03394a5417da0e9e4bd05530645eb684fede56f96f777/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d5059544553542d3039303930393f7374796c653d666f722d7468652d6261646765266c6f676f3d505954455354266c6f676f636f6c6f723d304345424542)
 ![DOCKER](https://img.shields.io/badge/-DOCKER-090909?style=for-the-badge&logo=DOCKER&logocolor=F24E1E)
 ![GIT](https://img.shields.io/badge/-GIT-090909?style=for-the-badge&logo=git&logocolor=F24E1E)
 ![GITHUB](https://img.shields.io/badge/Github-090909?style=for-the-badge&logo=github&logoColor=8cc4d7)
@@ -19,6 +20,7 @@ QA Engineer
 ![SWAGGER](https://img.shields.io/badge/Swagger-090909?style=for-the-badge&logo=swagger&logoColor=7ede2b)
 ![DEVTOOLS](https://img.shields.io/badge/DevTools-090909?style=for-the-badge&logo=googlechrome&logoColor=2674f2)
 ![HTML5](https://img.shields.io/badge/-html5-090909?style=for-the-badge&logo=html5&logocolor=#E34F26)
+![CSS3](https://camo.githubusercontent.com/75a51f1cd743b4c81d0c30a7f470d406fb7c9fadaceb5f8fc6ad0649f48927a7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d435353332d3039303930393f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f636f6c6f723d23313537324236)
 ![MYSQL](https://img.shields.io/badge/MySQL-090909?style=for-the-badge&logo=mysql&logoColor=00618a)
 ![FIDDLER](https://img.shields.io/badge/Fiddler-090909?style=for-the-badge&logo=fiddler&logoColor=8cc4d7)
 ![CHARLES](https://img.shields.io/badge/CharlesProxy-090909?style=for-the-badge&logo=charlesproxy&logoColor=8cc4d7)
