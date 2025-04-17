@@ -7,7 +7,7 @@
 </p>
 
 
-QA Engineer 
+QA/AQA Engineer 
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
 ### Language and Tools
 
