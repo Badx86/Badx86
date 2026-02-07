@@ -53,6 +53,9 @@ QA/AQA Engineer
 - [Postman Collections](https://github.com/Badx86/Postman-Collections)
 - [Mind Maps](https://github.com/Badx86/Site-Maps)
 
-### Follow Me
-[![Header](https://img.shields.io/badge/Telegram-090909?style=for-the-badge&logo=telegram&logoColor=31a5db)](https://t.me/badx86)
-[![Header](https://img.shields.io/badge/Linkedin-090909?style=for-the-badge&logo=linkedin&logoColor=0073b1)](https://www.linkedin.com/in/stanislav-osipov89/)
+### 📬 Follow Me
+
+<p align="left">
+<a href="https://t.me/badx86" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" title="Telegram" alt="Telegram" width="40" height="40"/></a>&nbsp;
+<a href="https://www.linkedin.com/in/stanislav-osipov89/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" title="LinkedIn" alt="LinkedIn" width="40" height="40"/></a>&nbsp;
+</p>
