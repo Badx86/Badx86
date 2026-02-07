@@ -9,34 +9,39 @@
 
 QA/AQA Engineer 
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
-### Language and Tools
+### 🛠️ Languages and Tools :
 
-![PYTHON](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)
-![PYTEST](https://img.shields.io/badge/-PYTEST-090909?style=for-the-badge&logo=PYTEST&logoColor=0CEBEB)
-![SELENIUM](https://img.shields.io/badge/Selenium-090909?style=for-the-badge&logo=selenium&logoColor=43B02A)
-![PLAYWRIGHT](https://img.shields.io/badge/Playwright-090909?style=for-the-badge&logo=playwright&logoColor=2EAD33)
-![REQUESTS](https://img.shields.io/badge/Requests-090909?style=for-the-badge&logo=python&logoColor=3670A0)
-![ALLURE](https://img.shields.io/badge/Allure-090909?style=for-the-badge&logo=qameta&logoColor=C5D9C8)
-![DOCKER](https://img.shields.io/badge/-DOCKER-090909?style=for-the-badge&logo=DOCKER&logoColor=2496ED)
-![GIT](https://img.shields.io/badge/-GIT-090909?style=for-the-badge&logo=git&logoColor=F05032)
-![GITHUB](https://img.shields.io/badge/Github-090909?style=for-the-badge&logo=github&logoColor=white)
-![GITLAB](https://img.shields.io/badge/GitLab-090909?style=for-the-badge&logo=gitlab&logoColor=FC6D26)
-![GRAFANA](https://img.shields.io/badge/Grafana-090909?style=for-the-badge&logo=grafana&logoColor=F46800)
-![SENTRY](https://img.shields.io/badge/Sentry-090909?style=for-the-badge&logo=sentry&logoColor=362D59)
-![POSTMAN](https://img.shields.io/badge/Postman-090909?style=for-the-badge&logo=postman&logoColor=FF6C37)
-![SWAGGER](https://img.shields.io/badge/Swagger-090909?style=for-the-badge&logo=swagger&logoColor=85EA2D)
-![DEVTOOLS](https://img.shields.io/badge/DevTools-090909?style=for-the-badge&logo=googlechrome&logoColor=4285F4)
-![HTML5](https://img.shields.io/badge/-HTML5-090909?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS3](https://img.shields.io/badge/-CSS3-090909?style=for-the-badge&logo=css3&logoColor=1572B6)
-![MYSQL](https://img.shields.io/badge/MySQL-090909?style=for-the-badge&logo=mysql&logoColor=4479A1)
-![FIDDLER](https://img.shields.io/badge/Fiddler-090909?style=for-the-badge&logo=fiddler&logoColor=8cc4d7)
-![FIGMA](https://img.shields.io/badge/Figma-090909?style=for-the-badge&logo=figma&logoColor=F24E1E)
-![CHARLES](https://img.shields.io/badge/CharlesProxy-090909?style=for-the-badge&logo=charlesproxy&logoColor=8cc4d7)
-![JIRA](https://img.shields.io/badge/Jira-090909?style=for-the-badge&logo=jira&logoColor=0052CC)
-![AZUREDEVOPS](https://img.shields.io/badge/AzureDevops-090909?style=for-the-badge&logo=azuredevops&logoColor=0078D7)
-![TESTRAIL](https://img.shields.io/badge/-TestRail-090909?style=for-the-badge&logo=testrail&logoColor=65C179)
-![JENKINS](https://img.shields.io/badge/Jenkins-090909?style=for-the-badge&logo=jenkins&logoColor=D24939)
-![ANDROIDSTUDIO](https://img.shields.io/badge/AndroidStudio-090909?style=for-the-badge&logo=androidstudio&logoColor=3DDC84)
+<p align="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" title="Pytest" alt="Pytest" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" title="Selenium" alt="Selenium" width="40" height="40"/>&nbsp;
+<img src="https://playwright.dev/img/playwright-logo.svg" title="Playwright" alt="Playwright" width="40" height="40"/>&nbsp;
+<img src="https://raw.githubusercontent.com/locustio/locust/master/locust/webui/public/assets/favicon-dark.png" title="Locust" alt="Locust" width="40" height="40"/>&nbsp;
+<img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" title="Allure" alt="Allure" width="40" height="40"/>&nbsp;
+<img src="https://docs.pydantic.dev/latest/logo-white.svg" title="Pydantic" alt="Pydantic" width="40" height="40"/>&nbsp;
+<img src="https://raw.githubusercontent.com/psf/requests/main/ext/requests-logo.png" title="Requests" alt="Requests" width="40" height="40"/>&nbsp;
+<img src="https://raw.githubusercontent.com/encode/httpx/master/docs/img/butterfly.png" title="HTTPX" alt="HTTPX" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas" alt="Pandas" width="40" height="40"/>&nbsp;
+<img src="https://avatars.githubusercontent.com/u/5997976?s=200&v=4" title="Plotly" alt="Plotly" width="40" height="40"/>&nbsp;
+<img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" title="Postman" alt="Postman" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" alt="PostgreSQL" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL" alt="MySQL" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" alt="Docker" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" title="GitLab" alt="GitLab" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" title="Grafana" alt="Grafana" width="40" height="40"/>&nbsp;
+<img src="https://www.vectorlogo.zone/logos/sentryio/sentryio-icon.svg" title="Sentry" alt="Sentry" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" title="PyCharm" alt="PyCharm" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" title="Android Studio" alt="Android Studio" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" title="Chrome DevTools" alt="DevTools" width="40" height="40"/>&nbsp;
+<img src="https://images.icon-icons.com/1381/PNG/512/charlesproxy_94518.png" title="Charles Proxy" alt="Charles" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" title="Jira" alt="Jira" width="40" height="40"/>&nbsp;
+<img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" title="Figma" alt="Figma" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="40" height="40"/>&nbsp;
+</p>
 
 ### Testing Documentation
 - [Test-Assignments](https://github.com/Badx86/Test-assignments)
