@@ -36,7 +36,7 @@ QA/AQA Engineer
 <a href="https://www.jetbrains.com/pycharm/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" title="PyCharm" alt="PyCharm" width="40" height="40"/></a>&nbsp;
 <a href="https://developer.android.com/studio" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" title="Android Studio" alt="Android Studio" width="40" height="40"/></a>&nbsp;
 <a href="https://developer.chrome.com/docs/devtools/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" title="Chrome DevTools" alt="DevTools" width="40" height="40"/></a>&nbsp;
-<a href="https://www.charlesproxy.com/" target="_blank"><img src="https://images.icon-icons.com/1381/PNG/512/charlesproxy_94518.png" title="Charles Proxy" alt="Charles" width="40" height="40"/></a>&nbsp;
+<a href="https://www.charlesproxy.com/" target="_blank"><img src="https://user-images.githubusercontent.com/89486551/143319787-e5eb9aa4-5b57-454f-b903-64282274af76.png" title="Charles Proxy" alt="Charles" width="40" height="40"/></a>&nbsp;
 <a href="https://www.atlassian.com/software/jira" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" title="Jira" alt="Jira" width="40" height="40"/></a>&nbsp;
 <a href="https://www.figma.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" title="Figma" alt="Figma" width="40" height="40"/></a>&nbsp;
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="40" height="40"/></a>&nbsp;
