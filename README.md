@@ -11,7 +11,7 @@ QA/AQA Engineer
 - [Courses and Certificates](https://www.linkedin.com/in/stanislav-osipov89/details/certifications/)
 ### 🛠️ Languages and Tools :
 
-<p align="left">
+<p align="center">
 <a href="https://www.python.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/></a>&nbsp;
 <a href="https://docs.pytest.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" title="Pytest" alt="Pytest" width="40" height="40"/></a>&nbsp;
 <a href="https://www.selenium.dev/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" title="Selenium" alt="Selenium" width="40" height="40"/></a>&nbsp;
@@ -29,7 +29,6 @@ QA/AQA Engineer
 <a href="https://www.docker.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" alt="Docker" width="40" height="40"/></a>&nbsp;
 <a href="https://www.jenkins.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/></a>&nbsp;
 <a href="https://git-scm.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/></a>&nbsp;
-<a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" width="40" height="40"/></a>&nbsp;
 <a href="https://gitlab.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" title="GitLab" alt="GitLab" width="40" height="40"/></a>&nbsp;
 <a href="https://grafana.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" title="Grafana" alt="Grafana" width="40" height="40"/></a>&nbsp;
 <a href="https://sentry.io/" target="_blank"><img src="https://www.vectorlogo.zone/logos/sentryio/sentryio-icon.svg" title="Sentry" alt="Sentry" width="40" height="40"/></a>&nbsp;
