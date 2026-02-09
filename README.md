@@ -31,6 +31,7 @@ QA/AQA Engineer
 <a href="https://git-scm.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/></a>&nbsp;
 <a href="https://gitlab.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" title="GitLab" alt="GitLab" width="40" height="40"/></a>&nbsp;
 <a href="https://grafana.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" title="Grafana" alt="Grafana" width="40" height="40"/></a>&nbsp;
+  <a href="https://prometheus.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" title="Prometheus" alt="Prometheus" width="40" height="40"/></a>&nbsp;
 <a href="https://sentry.io/" target="_blank"><img src="https://www.vectorlogo.zone/logos/sentryio/sentryio-icon.svg" title="Sentry" alt="Sentry" width="40" height="40"/></a>&nbsp;
 <a href="https://www.jetbrains.com/pycharm/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" title="PyCharm" alt="PyCharm" width="40" height="40"/></a>&nbsp;
 <a href="https://developer.android.com/studio" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" title="Android Studio" alt="Android Studio" width="40" height="40"/></a>&nbsp;
