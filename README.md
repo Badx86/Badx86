@@ -21,6 +21,8 @@ QA/AQA Engineer
 <a href="https://docs.pydantic.dev/" target="_blank"><img src="https://docs.pydantic.dev/latest/logo-white.svg" title="Pydantic" alt="Pydantic" width="40" height="40"/></a>&nbsp;
 <a href="https://requests.readthedocs.io/" target="_blank"><img src="https://raw.githubusercontent.com/psf/requests/main/ext/requests-logo.png" title="Requests" alt="Requests" width="40" height="40"/></a>&nbsp;
 <a href="https://www.python-httpx.org/" target="_blank"><img src="https://raw.githubusercontent.com/encode/httpx/master/docs/img/butterfly.png" title="HTTPX" alt="HTTPX" width="40" height="40"/></a>&nbsp;
+<a href="https://graphql.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" title="GraphQL" alt="GraphQL" width="40" height="40"/></a>&nbsp;
+<a href="https://grpc.io/" target="_blank"><img src="https://www.vectorlogo.zone/logos/grpcio/grpcio-icon.svg" title="gRPC" alt="gRPC" width="40" height="40"/></a>&nbsp;
 <a href="https://pandas.pydata.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas" alt="Pandas" width="40" height="40"/></a>&nbsp;
 <a href="https://plotly.com/" target="_blank"><img src="https://avatars.githubusercontent.com/u/5997976?s=200&v=4" title="Plotly" alt="Plotly" width="40" height="40"/></a>&nbsp;
 <a href="https://www.postman.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" title="Postman" alt="Postman" width="40" height="40"/></a>&nbsp;
