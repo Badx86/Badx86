@@ -59,6 +59,6 @@ QA/AQA Engineer
 ### 📬 Follow Me
 
 <p align="left">
-<a href="https://t.me/badx86" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" title="Telegram" alt="Telegram" width="40" height="40"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/stanislav-osipov89/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" title="LinkedIn" alt="LinkedIn" width="40" height="40"/></a>&nbsp;
+<a href="https://t.me/badx86" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" title="Telegram" alt="Telegram" width="40"/></a>&nbsp;
+<a href="https://www.linkedin.com/in/stanislav-osipov89/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" title="LinkedIn" alt="LinkedIn" width="40"/></a>&nbsp;
 </p>
