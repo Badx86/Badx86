@@ -56,6 +56,24 @@ QA/AQA Engineer
 - [Postman Collections](https://github.com/Badx86/Postman-Collections)
 - [Mind Maps](https://github.com/Badx86/Site-Maps)
 
+### 📚 Stepik Activity
+
+<div align="center">
+  <a href="https://stepik.org/users/457012701/profile">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://raw.githubusercontent.com/Badx86/Badx86/main/assets/stepik-activity-dark.svg">
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="https://raw.githubusercontent.com/Badx86/Badx86/main/assets/stepik-activity-light.svg">
+      <img
+        alt="Stepik activity heatmap"
+        src="https://raw.githubusercontent.com/Badx86/Badx86/main/assets/stepik-activity-dark.svg">
+    </picture>
+  </a>
+</div>
+
 ### 📬 Follow Me
 
 <p align="left">
