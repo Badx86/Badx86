@@ -46,14 +46,8 @@ QA/AQA Engineer
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="40"/></a>&nbsp;
 </p>
 
-### Testing Documentation
+### 🗂️ Test Artifacts
 - [Test-Assignments](https://github.com/Badx86/Test-assignments)
-- [Checklists](https://github.com/Badx86/Checklists)
-- [Test-Suites and Test-Cases](https://github.com/Badx86/Test-Suites-and-Test-Cases)
-- [Bug-Reports](https://github.com/Badx86/Bug-Reports)
-- [Test-Plan](https://drive.google.com/file/d/1SFSsskNMEVJAX7Sy9FJAFqX4I8A47l_X/view?usp=sharing)
-- [SQL Queries](https://github.com/Badx86/SQL-Queries)
-- [Postman Collections](https://github.com/Badx86/Postman-Collections)
 - [Mind Maps](https://github.com/Badx86/Site-Maps)
 
 ### 📚 Stepik Activity
