@@ -13,7 +13,8 @@ on:
 
 concurrency:
   group: stepik-activity
-  cancel-in-progress: true
+  # Шедулер не отменяем: запущенный прогон может быть в середине push'а.
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -27,25 +28,18 @@ jobs:
       # STEPIK_CLIENT_ID: ${{ secrets.STEPIK_CLIENT_ID }}
       # STEPIK_CLIENT_SECRET: ${{ secrets.STEPIK_CLIENT_SECRET }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Render dark theme
+      - name: Render dark + light
         run: |
           python scripts/stepik_activity.py \
             --user-id "$STEPIK_USER_ID" \
-            --theme dark \
-            --output assets/stepik-activity-dark.svg
-
-      - name: Render light theme
-        run: |
-          python scripts/stepik_activity.py \
-            --user-id "$STEPIK_USER_ID" \
-            --theme light \
-            --output assets/stepik-activity-light.svg
+            --output-dark  assets/stepik-activity-dark.svg \
+            --output-light assets/stepik-activity-light.svg
 
       - name: Commit & push if changed
         run: |
@@ -58,3 +52,4 @@ jobs:
             git commit -m "chore(stepik): refresh activity heatmap $(date -u +%F)"
             git push
           fi
+          
