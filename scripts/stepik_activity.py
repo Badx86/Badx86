@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 """
 Генератор SVG-тепловой карты активности Stepik для GitHub profile README.
- 
+
 Тянет публичный эндпоинт https://stepik.org/api/user-activities/{user_id}
 и собирает SVG в стиле GitHub contribution graph.
- 
+
+Данные тянутся одним запросом и рендерятся во все запрошенные темы сразу —
+незачем дёргать API отдельно под каждую тему.
+
 Пример:
-    python stepik_activity.py --user-id 457012701 --theme dark \\
-        --output stepik-activity-dark.svg
+    python stepik_activity.py --user-id 457012701 \\
+        --output-dark  stepik-activity-dark.svg \\
+        --output-light stepik-activity-light.svg
 """
- 
+
 from __future__ import annotations
- 
+
 import argparse
 import json
 import os
@@ -23,20 +27,20 @@ from html import escape
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
- 
+
 STEPIK_API = "https://stepik.org/api/user-activities/{user_id}"
 TOKEN_URL = "https://stepik.org/oauth2/token/"
- 
+
 USER_AGENT = (
     "Mozilla/5.0 (stepik-activity-readme/1.0; +https://github.com/Badx86)"
 )
- 
+
 # Ретраи. Stepik периодически отдаёт 5xx или рвёт соединение — один блип
 # не должен ронять весь прогон CI.
 RETRY_ATTEMPTS = 4
 RETRY_BASE_DELAY = 2.0  # секунды; дальше экспоненциально: 2 → 4 → 8
 RETRYABLE_CODES = frozenset({429, 500, 502, 503, 504})
- 
+
 # ----------------------------------------------------------------------
 # Темы. Палитры — классические GitHub contribution graph.
 # ----------------------------------------------------------------------
@@ -52,7 +56,7 @@ PALETTES: dict[str, dict[str, object]] = {
         "cells": ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
     },
 }
- 
+
 # Геометрия клеток (px)
 CELL = 11
 GAP = 3
@@ -60,14 +64,14 @@ LEFT_PAD = 32
 TOP_PAD = 50
 BOTTOM_PAD = 34
 RIGHT_PAD = 12
- 
+
 MONTHS_EN = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun",
     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
 ]
 WEEKDAY_LABELS = {0: "Mon", 2: "Wed", 4: "Fri"}  # ISO: Mon=0 ... Sun=6
- 
- 
+
+
 # ----------------------------------------------------------------------
 # Модель данных
 # ----------------------------------------------------------------------
@@ -78,8 +82,8 @@ class ActivityData:
     total_solved: int
     current_streak: int
     max_streak: int
- 
- 
+
+
 # ----------------------------------------------------------------------
 # Загрузка данных
 # ----------------------------------------------------------------------
@@ -91,7 +95,7 @@ def _http_get_json(
 ) -> dict:
     """
     GET + разбор JSON с ретраями на транзиентных сбоях.
- 
+
     Ретраим только то, что имеет шанс починиться само: 429, 5xx, обрывы
     соединения, таймауты и битый JSON (обычно HTML-страница ошибки от
     балансировщика). Остальные 4xx — включая 401/403 — пробрасываем сразу,
@@ -101,7 +105,7 @@ def _http_get_json(
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = Request(url, headers=headers)
- 
+
     last_err: Exception | None = None
     for attempt in range(1, attempts + 1):
         try:
@@ -114,7 +118,7 @@ def _http_get_json(
             last_err = e
         except (URLError, TimeoutError, json.JSONDecodeError) as e:
             last_err = e
- 
+
         if attempt < attempts:
             delay = RETRY_BASE_DELAY * 2 ** (attempt - 1)
             print(
@@ -123,17 +127,17 @@ def _http_get_json(
                 file=sys.stderr,
             )
             time.sleep(delay)
- 
+
     raise RuntimeError(
         f"Stepik API недоступен после {attempts} попыток: {last_err}"
     ) from last_err
- 
- 
+
+
 def _get_oauth_token(client_id: str, client_secret: str, timeout: int = 30) -> str:
     """Получает access_token через client_credentials flow."""
     from base64 import b64encode
     from urllib.parse import urlencode
- 
+
     body = urlencode({"grant_type": "client_credentials"}).encode("ascii")
     basic = b64encode(f"{client_id}:{client_secret}".encode()).decode()
     req = Request(
@@ -152,8 +156,8 @@ def _get_oauth_token(client_id: str, client_secret: str, timeout: int = 30) -> s
     if not token:
         raise RuntimeError("Stepik OAuth: access_token не получен")
     return token
- 
- 
+
+
 def fetch_activity(
     user_id: int,
     token: str | None = None,
@@ -178,18 +182,18 @@ def fetch_activity(
                 ) from e
         else:
             raise
- 
+
     try:
         activity = payload["user-activities"][0]
     except (KeyError, IndexError, TypeError) as e:
         raise RuntimeError(f"Неожиданный ответ Stepik API: {payload!r}") from e
- 
+
     pins = [int(x) for x in activity.get("pins") or []]
     if not pins:
         raise RuntimeError("Stepik не вернул pins — активности нет либо профиль скрыт")
- 
+
     today = datetime.now(timezone.utc).date()
- 
+
     # Текущая серия: сколько подряд ненулевых элементов с начала (pins[0] = сегодня).
     # Если сегодня 0, считаем серию с вчера (чтобы утренние часы не обнуляли стрик).
     current = 0
@@ -199,7 +203,7 @@ def fetch_activity(
             current += 1
         else:
             break
- 
+
     # Максимальная серия за весь массив.
     max_s = 0
     run = 0
@@ -210,7 +214,7 @@ def fetch_activity(
                 max_s = run
         else:
             run = 0
- 
+
     return ActivityData(
         pins=pins,
         today=today,
@@ -218,8 +222,8 @@ def fetch_activity(
         current_streak=current,
         max_streak=max_s,
     )
- 
- 
+
+
 # ----------------------------------------------------------------------
 # Разметка сетки
 # ----------------------------------------------------------------------
@@ -237,10 +241,10 @@ def build_grid(
     # Колонки выравниваем по понедельнику.
     while start.weekday() != 0:
         start += timedelta(days=1)
- 
+
     grid: list[list[int | None]] = [[None] * weeks for _ in range(7)]
     col_dates: list[date] = []
- 
+
     for col in range(weeks):
         week_start = start + timedelta(days=col * 7)
         col_dates.append(week_start)
@@ -251,10 +255,10 @@ def build_grid(
             delta = (today - d).days
             if 0 <= delta < len(data.pins):
                 grid[row][col] = data.pins[delta]
- 
+
     return grid, col_dates
- 
- 
+
+
 def compute_thresholds(pins: list[int]) -> list[int]:
     """Квартили на ненулевых значениях → 4 границы уровней 1..4."""
     positives = sorted(v for v in pins if v > 0)
@@ -270,8 +274,8 @@ def compute_thresholds(pins: list[int]) -> list[int]:
         out.append(v)
         prev = v
     return out[:4]
- 
- 
+
+
 def level(count: int, thresholds: list[int]) -> int:
     if count <= 0:
         return 0
@@ -279,8 +283,8 @@ def level(count: int, thresholds: list[int]) -> int:
         if count <= t:
             return i + 1
     return 4
- 
- 
+
+
 def month_labels(col_dates: list[date]) -> list[tuple[int, str]]:
     """Лейблы месяцев для верхнего ряда: по первой неделе месяца, не ближе 3 колонок."""
     out: list[tuple[int, str]] = []
@@ -291,8 +295,8 @@ def month_labels(col_dates: list[date]) -> list[tuple[int, str]]:
                 out.append((col, MONTHS_EN[d.month - 1]))
             last_month = d.month
     return out
- 
- 
+
+
 # ----------------------------------------------------------------------
 # Рендер SVG
 # ----------------------------------------------------------------------
@@ -307,22 +311,22 @@ def _fmt_ru_count(n: int, forms: tuple[str, str, str]) -> str:
     if 2 <= n_abs <= 4:
         return forms[1]
     return forms[2]
- 
- 
+
+
 def render_svg(data: ActivityData, theme: str = "dark", weeks: int = 53) -> str:
     palette = PALETTES[theme]
     cells_colors: list[str] = palette["cells"]  # type: ignore[assignment]
     text_c = palette["text"]
     muted_c = palette["muted"]
- 
+
     grid, col_dates = build_grid(data, weeks)
     thresholds = compute_thresholds(data.pins)
- 
+
     grid_w = weeks * (CELL + GAP) - GAP
     grid_h = 7 * (CELL + GAP) - GAP
     width = LEFT_PAD + grid_w + RIGHT_PAD
     height = TOP_PAD + grid_h + BOTTOM_PAD
- 
+
     parts: list[str] = [
         f'<svg xmlns="http://www.w3.org/2000/svg" '
         f'viewBox="0 0 {width} {height}" width="{width}" height="{height}" '
@@ -335,14 +339,14 @@ def render_svg(data: ActivityData, theme: str = "dark", weeks: int = 53) -> str:
         f'.m{{fill:{muted_c};font-size:9px;}}'
         '</style>',
     ]
- 
+
     # --- Заголовок
     solved_word = _fmt_ru_count(
         data.total_solved, ("задача", "задачи", "задач")
     )
     day_word = _fmt_ru_count(data.current_streak, ("день", "дня", "дней"))
     max_word = _fmt_ru_count(data.max_streak, ("день", "дня", "дней"))
- 
+
     parts.append(
         f'<text class="t title" x="{LEFT_PAD}" y="20">'
         f'Stepik · {data.total_solved} {solved_word} решено'
@@ -354,20 +358,20 @@ def render_svg(data: ActivityData, theme: str = "dark", weeks: int = 53) -> str:
         f'· Максимум: {data.max_streak} {max_word}'
         '</text>'
     )
- 
+
     origin_x = LEFT_PAD
     origin_y = TOP_PAD
- 
+
     # --- Месяцы
     for col, lab in month_labels(col_dates):
         x = origin_x + col * (CELL + GAP)
         parts.append(f'<text class="t m" x="{x}" y="{origin_y - 6}">{lab}</text>')
- 
+
     # --- Дни недели
     for row, lab in WEEKDAY_LABELS.items():
         y = origin_y + row * (CELL + GAP) + CELL - 1
         parts.append(f'<text class="t m" x="2" y="{y}">{lab}</text>')
- 
+
     # --- Клетки
     for row in range(7):
         for col in range(weeks):
@@ -385,13 +389,13 @@ def render_svg(data: ActivityData, theme: str = "dark", weeks: int = 53) -> str:
                 f'rx="2" ry="2" fill="{color}">'
                 f'<title>{tip}</title></rect>'
             )
- 
+
     # --- Легенда
     legend_y = TOP_PAD + grid_h + 20
     legend_right = LEFT_PAD + grid_w
     legend_w = 5 * (CELL + GAP) - GAP + 80  # 5 ячеек + подписи
     legend_x = legend_right - legend_w
- 
+
     parts.append(
         f'<text class="t m" x="{legend_x}" y="{legend_y}" '
         'text-anchor="start">Меньше</text>'
@@ -407,21 +411,24 @@ def render_svg(data: ActivityData, theme: str = "dark", weeks: int = 53) -> str:
         f'<text class="t m" x="{lx + 5 * (CELL + GAP) + 4}" y="{legend_y}">'
         'Больше</text>'
     )
- 
+
     parts.append("</svg>")
     return "".join(parts)
- 
- 
+
+
 # ----------------------------------------------------------------------
 # CLI
 # ----------------------------------------------------------------------
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--user-id", type=int, required=True, help="Stepik user id")
-    p.add_argument("--output", type=Path, required=True, help="Путь к SVG")
     p.add_argument(
-        "--theme", choices=("dark", "light"), default="dark",
-        help="Цветовая тема (default: dark)",
+        "--output-dark", type=Path, default=None,
+        help="Путь к SVG тёмной темы",
+    )
+    p.add_argument(
+        "--output-light", type=Path, default=None,
+        help="Путь к SVG светлой темы",
     )
     p.add_argument(
         "--weeks", type=int, default=53,
@@ -432,24 +439,38 @@ def main(argv: list[str] | None = None) -> int:
         help=f"Попыток запроса к Stepik API (default: {RETRY_ATTEMPTS})",
     )
     args = p.parse_args(argv)
- 
+
+    targets: list[tuple[str, Path]] = [
+        (theme, path)
+        for theme, path in (
+            ("dark", args.output_dark),
+            ("light", args.output_light),
+        )
+        if path is not None
+    ]
+    if not targets:
+        p.error("нужен хотя бы один из --output-dark / --output-light")
+
+    # Один запрос к API на все темы: данные общие, разница только в палитре.
     try:
         data = fetch_activity(args.user_id, attempts=args.attempts)
     except (HTTPError, URLError, RuntimeError) as e:
         print(f"[stepik_activity] Ошибка: {e}", file=sys.stderr)
         return 1
- 
-    svg = render_svg(data, theme=args.theme, weeks=args.weeks)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(svg, encoding="utf-8")
+
+    for theme, output in targets:
+        svg = render_svg(data, theme=theme, weeks=args.weeks)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(svg, encoding="utf-8")
+        print(f"[stepik_activity] {output} · тема {theme}")
+
     print(
-        f"[stepik_activity] {args.output} · "
-        f"{data.total_solved} solved · "
+        f"[stepik_activity] {data.total_solved} solved · "
         f"streak {data.current_streak} (max {data.max_streak})"
     )
     return 0
- 
- 
+
+
 if __name__ == "__main__":
     sys.exit(main())
  
